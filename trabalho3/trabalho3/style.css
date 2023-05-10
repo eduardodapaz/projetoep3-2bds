@@ -1,0 +1,149 @@
+/*Nesse class abaixo as tags as tags font-size, line-height e font-weight foram usados para redimensionar a logo, o color para colorir e o padding para redimensionar a borda */
+.logo{
+  color: aliceblue;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+
+}
+/* O codigo abaixo, o body e a parte principal do site, a tag background-image foi usado para colocar uma imagem como fundo do site, o color para mudar as cores das letras dos textos e a tag margin define a área de margem nos quatro lados do elemento. */
+body{
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--FNm6M500--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/80ywr4mbxogncowbkjxc.gif);
+    color: bisque;
+    margin: 0%; 
+}
+/* O codigo abaixo, o section é a parte que serve para escrever o teto, as tags text-align,  */
+section{
+    text-align: justify;
+  margin-left: 22%;
+  margin-right: 22%;
+  width: 55%;
+  text-indent: 50px;
+  font-size: large; 
+  border: 3px solid rgb(40, 4, 245);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  background-color: rgba(47, 0, 142, 0.484) ;
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  text-align: center;
+  font-size: x-large;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+/* As tags abaio (nav) servem para configurar o navegador, alinhando eles e dando uma animação a eles*/
+nav ul{
+  float: right;
+  margin-right: 20px;  
+}
+nav ul li{
+  display: inline-block;
+  margin: 0 5px;
+}
+nav ul li a{
+color: wheat;
+font-size: 17px;
+padding: 7px 13px;
+
+}
+/* As tags abaio, a.active e a:hover foram utilizadas para fazer a animação dos links*/
+a.active, a:hover{
+  background-color: rgb(30, 0, 255);
+  border-radius: 2rem;
+  transition: 3s;
+}
+/* o img e a configuração de imagem, e as tags width e height foram usadas para redimensionar as imagens*/
+img{
+        width: 60%;
+        height: 60%;
+       
+}
+/* Essa tag abaixo do footer(o rodapé do site) foi usada para centralizar o footer*/
+   footer{
+    background-color: rgb(0, 0, 111);
+    margin: 0%;
+   text-align: center;
+   margin-left: 22%;
+  margin-right: 22%;
+  border-radius: 2re;
+    }
+   
+/* As tags abaixo são class, usados para centralizar uma imagem do header*/   
+#gato{
+  text-align: center; 
+
+}  
+.kauanny{
+  text-align: center;
+}
+.hick{
+  text-align: center;
+}
+.seta{
+  text-align: left;
+}
+/* A sequêcia de tags abaixo foram utilizadas para quando a janela estiver minimizada ela se adaptará ao tamanho, mas não está funcionando corretamente*/
+.checkbtn{
+  font-size: 30px;
+  color: wheat;
+  float: right;
+  line-height: 80px;
+  margin: right 40px; ;
+  cursor: pointer;
+  display: none;
+ 
+}
+#check{
+ display: none;
+
+}
+@media(max-width: 952px){
+  label.logo{
+  font-size: 30px;
+  padding-left: 50px;
+  }
+  nav ul li{
+      font-size: 16px;
+  }
+}
+@media(max-width: 858px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background:rgb(22, 2, 170) ;
+      top: 80px;
+      left: 0;
+      text-align: center;
+      transition: all .5s;
+  }
+  header{
+     background-color: rgb(23, 11, 255) oooo
+  }
+  nav ul li{
+      display: block;  
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  a.active, a:hover{
+      background: none;
+      color: rgb(0, 136, 255);
+  }
+  #check:checked{
+      left: 100;
+      
+  }
+
+
+}
+
